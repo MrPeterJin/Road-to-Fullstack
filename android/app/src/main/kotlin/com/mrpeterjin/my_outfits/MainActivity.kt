@@ -1,4 +1,4 @@
-package com.mrpeterjin.my_clothes
+package com.mrpeterjin.my_outfits
 
 import io.flutter.embedding.android.FlutterActivity
 

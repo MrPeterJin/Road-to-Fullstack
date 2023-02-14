@@ -1,4 +1,4 @@
-import 'package:my_clothes/screens/bottom_bar.dart';
+import 'package:my_outfits/screens/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {

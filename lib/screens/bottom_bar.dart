@@ -14,7 +14,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const Text("home"),
     const Text("Search"),
-    const Text("Clothes"),
+    const Text("Outfits"),
     const Text("Profile")
   ];
 
@@ -28,7 +28,7 @@ class _BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("My clothes"),
+        title: const Text("My outfits"),
       ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
@@ -53,7 +53,7 @@ class _BottomBarState extends State<BottomBar> {
             BottomNavigationBarItem(
                 icon: Icon(FluentIcons.accessibility_16_regular),
                 activeIcon: Icon(FluentIcons.accessibility_16_filled),
-                label: "Clothes"),
+                label: "Outfits"),
             BottomNavigationBarItem(
                 icon: Icon(FluentIcons.person_16_regular),
                 activeIcon: Icon(FluentIcons.person_16_filled),
