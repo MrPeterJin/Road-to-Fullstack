@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.mrpeterjin" "\0"
-            VALUE "FileDescription", "my_clothes" "\0"
+            VALUE "FileDescription", "my_outfits" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "my_clothes" "\0"
+            VALUE "InternalName", "my_outfits" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.mrpeterjin. All rights reserved." "\0"
-            VALUE "OriginalFilename", "my_clothes.exe" "\0"
-            VALUE "ProductName", "my_clothes" "\0"
+            VALUE "OriginalFilename", "my_outfits.exe" "\0"
+            VALUE "ProductName", "my_outfits" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
