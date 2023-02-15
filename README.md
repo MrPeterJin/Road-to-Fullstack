@@ -15,6 +15,8 @@ and observe the whole framework, or try to complie by yourself. Since I am still
 Stage 1: Basic Framework (Completed on Feb. 14, 2022)                  
 Stage 2: Static Information with Each Section
 
+Detailed development records are in the [records](/records/) folder.
+
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.
 - [Flutter docs](https://docs.flutter.dev/)
