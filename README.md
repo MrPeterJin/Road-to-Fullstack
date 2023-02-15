@@ -15,7 +15,7 @@ and observe the whole framework, or try to complie by yourself. Since I am still
 Stage 1: Basic Framework (Completed on Feb. 14, 2022)                  
 Stage 2: Static Information with Each Section
 
-Detailed development records are in the [records](/records/) folder.
+Detailed development records are in the [records](/records/) folder. The application successfully runs on Android, Linux, and web (Chrome).
 
 The screenshot of the main page is displayed below:      
 ![home.png](/records/2022-02-15/home.png)

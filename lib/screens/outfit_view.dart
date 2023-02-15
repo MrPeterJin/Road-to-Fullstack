@@ -85,7 +85,7 @@ class OutfitView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 110,
+                        width: 90,
                         child: Text(
                           'HKTVMall',
                           style: Styles.textStyle.copyWith(color: Colors.white),
@@ -97,9 +97,9 @@ class OutfitView extends StatelessWidget {
                             Styles.headLineStyle3.copyWith(color: Colors.white),
                       ),
                       SizedBox(
-                        width: 100,
+                        width: 80,
                         child: Text(
-                          '        5 months',
+                          '  5 months',
                           style: Styles.textStyle.copyWith(color: Colors.white),
                         ),
                       )
