@@ -1,5 +1,6 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:my_outfits/screens/outfit_view.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:gap/gap.dart';
 
@@ -44,19 +45,41 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const Gap(25),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: const Color(0xFFF4F6FD),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  child: Row(
+                    children: [
+                      const Icon(FluentIcons.search_16_regular,
+                          color: Color(0xFFBFC205)),
+                      Text(
+                        "Search",
+                        style: Styles.headLineStyle4,
+                      )
+                    ],
+                  ),
+                ),
+                const Gap(30),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Icon(FluentIcons.search_16_regular,
-                        color: Color(0xFFBFC205)),
-                    Text(
-                      "Search",
-                      style: Styles.headLineStyle4,
-                    )
+                    Text("Upcoming Changes", style: Styles.headLineStyle2,),
+                    InkWell(
+                        onTap: (){
+                          print("tapped");
+                        },
+                        child: Text("View all", style: Styles.textStyle.copyWith(color: Styles.primaryColor),))
                   ],
                 )
               ],
             ),
           ),
+          const Gap(15),
+          OutfitView(),
         ],
       ),
     );
