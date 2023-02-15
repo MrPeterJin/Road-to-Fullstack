@@ -67,19 +67,36 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Upcoming Changes", style: Styles.headLineStyle2,),
+                    Text(
+                      "Upcoming Changes",
+                      style: Styles.headLineStyle2,
+                    ),
                     InkWell(
-                        onTap: (){
+                        onTap: () {
                           print("tapped");
                         },
-                        child: Text("View all", style: Styles.textStyle.copyWith(color: Styles.primaryColor),))
+                        child: Text(
+                          "View all",
+                          style: Styles.textStyle
+                              .copyWith(color: Styles.primaryColor),
+                        ))
                   ],
                 )
               ],
             ),
           ),
           const Gap(15),
-          OutfitView(),
+          const SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: EdgeInsets.only(left: 20),
+            child: Row(
+              children: [
+                OutfitView(),
+                OutfitView(),
+              ],
+            ),
+          ),
+          const Gap(15),
         ],
       ),
     );

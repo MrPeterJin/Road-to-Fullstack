@@ -17,6 +17,9 @@ Stage 2: Static Information with Each Section
 
 Detailed development records are in the [records](/records/) folder.
 
+The screenshot of the main page is displayed below:
+![home.png](/records/2022-02-15/home.png)
+
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.
 - [Flutter docs](https://docs.flutter.dev/)
