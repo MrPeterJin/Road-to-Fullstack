@@ -1,6 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:my_outfits/screens/outfit_view.dart';
+import 'package:my_outfits/screens/popular_screen.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:gap/gap.dart';
 
@@ -97,6 +98,29 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const Gap(15),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Popular Outfits",
+                  style: Styles.headLineStyle2,
+                ),
+                InkWell(
+                    onTap: () {
+                      print("tapped");
+                    },
+                    child: Text(
+                      "View all",
+                      style:
+                          Styles.textStyle.copyWith(color: Styles.primaryColor),
+                    ))
+              ],
+            ),
+          ),
+          const Gap(15),
+          PopularScreen(),
         ],
       ),
     );

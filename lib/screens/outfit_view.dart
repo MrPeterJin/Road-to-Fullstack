@@ -15,9 +15,9 @@ class OutfitView extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return SizedBox(
       width: size.width * 0.85,
-      height: size.height,
+      height: 200,
       child: Container(
-        margin: const EdgeInsets.only(left: 16, right: 16),
+        margin: const EdgeInsets.only(right: 16),
         child: Column(
           children: [
             Container(
