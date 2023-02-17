@@ -172,13 +172,13 @@ class OutfitView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Summer Wear',
+                          'Type',
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
                         const Gap(5),
                         Text(
-                          'short sleeves',
+                          'Short Sleeves',
                           style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
@@ -204,13 +204,13 @@ class OutfitView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'With Collar',
+                          'Tag',
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
                         const Gap(5),
                         Text(
-                          'Square',
+                          'Square Collar',
                           style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
