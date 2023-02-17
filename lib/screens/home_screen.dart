@@ -5,6 +5,8 @@ import 'package:my_outfits/screens/popular_screen.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:gap/gap.dart';
 
+import '../utils/app_info_list.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -104,7 +106,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Popular Outfits",
+                  "Your Popular Outfits",
                   style: Styles.headLineStyle2,
                 ),
                 InkWell(
@@ -120,7 +122,14 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const Gap(15),
-          PopularScreen(),
+          SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.only(left: 20),
+              child: Row(
+                  children: outfitList
+                      .map(
+                          (singleOutfit) => PopularScreen(outfit: singleOutfit))
+                      .toList())),
         ],
       ),
     );

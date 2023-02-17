@@ -18,7 +18,7 @@ Stage 2: Static Information with Each Section
 Detailed development records are in the [records](/records/) folder. The application successfully runs on Android, Linux, and web (Chrome).
 
 The screenshot of the main page is displayed below:      
-![home.png](/records/2022-02-16/home.png)
+![home.png](/records/2022-02-17/home.png)
 
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.

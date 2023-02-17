@@ -184,22 +184,22 @@ class OutfitView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    // Column(
-                    //   crossAxisAlignment: CrossAxisAlignment.center,
-                    //   children: [
-                    //     Text(
-                    //       'placeholder1',
-                    //       style: Styles.headLineStyle3
-                    //           .copyWith(color: Colors.white),
-                    //     ),
-                    //     const Gap(5),
-                    //     Text(
-                    //       'placeholder2',
-                    //       style: Styles.headLineStyle4
-                    //           .copyWith(color: Colors.white),
-                    //     ),
-                    //   ],
-                    // ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Main Color',
+                          style: Styles.headLineStyle3
+                              .copyWith(color: Colors.white),
+                        ),
+                        const Gap(5),
+                        Text(
+                          'White',
+                          style: Styles.headLineStyle4
+                              .copyWith(color: Colors.white),
+                        ),
+                      ],
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
