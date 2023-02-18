@@ -81,7 +81,7 @@ class OutfitView extends StatelessWidget {
                       )
                     ],
                   ),
-                  const Gap(3),
+                  Gap(AppLayout.getHeight(3)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -183,7 +183,7 @@ class OutfitView extends StatelessWidget {
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
-                        const Gap(5),
+                        Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['class'],
                           style: Styles.headLineStyle4
@@ -199,7 +199,7 @@ class OutfitView extends StatelessWidget {
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
-                        const Gap(5),
+                        Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['main_feature_detail'],
                           style: Styles.headLineStyle4
@@ -215,7 +215,7 @@ class OutfitView extends StatelessWidget {
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
-                        const Gap(5),
+                        Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['specific_detail'],
                           style: Styles.headLineStyle4

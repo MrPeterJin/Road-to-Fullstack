@@ -14,7 +14,7 @@ class PopularScreen extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width * 0.6,
-      height: AppLayout.getHeight(320),
+      height: AppLayout.getHeight(360),
       padding: EdgeInsets.symmetric(
           horizontal: AppLayout.getHeight(15),
           vertical: AppLayout.getHeight(17)),

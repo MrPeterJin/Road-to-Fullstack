@@ -6,6 +6,7 @@ import 'package:my_outfits/utils/app_style.dart';
 import 'package:gap/gap.dart';
 
 import '../utils/app_info_list.dart';
+import '../utils/app_layout.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,10 +18,12 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: EdgeInsets.symmetric(
+                horizontal: AppLayout.getHeight(20),
+                vertical: AppLayout.getHeight(10)),
             child: Column(
               children: [
-                const Gap(20),
+                Gap(AppLayout.getHeight(20)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -31,30 +34,33 @@ class HomeScreen extends StatelessWidget {
                             "Good Morning",
                             style: Styles.headLineStyle3,
                           ),
-                          const Gap(5),
+                          Gap(AppLayout.getHeight(5)),
                           Text(
                             "My Outfits",
                             style: Styles.headLineStyle,
                           )
                         ]),
                     Container(
-                        height: 50,
-                        width: 50,
+                        height: AppLayout.getHeight(50),
+                        width: AppLayout.getWidth(10),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius:
+                                BorderRadius.circular(AppLayout.getHeight(10)),
                             image: const DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage('assets/images/avatar.jpg'))))
                   ],
                 ),
-                const Gap(25),
+                Gap(AppLayout.getHeight(25)),
                 Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius:
+                        BorderRadius.circular(AppLayout.getHeight(20)),
                     color: const Color(0xFFF4F6FD),
                   ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: AppLayout.getHeight(12),
+                      vertical: AppLayout.getHeight(12)),
                   child: Row(
                     children: [
                       const Icon(FluentIcons.search_16_regular,
@@ -66,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Gap(30),
+                Gap(AppLayout.getHeight(30)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -88,10 +94,10 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          const Gap(15),
+          Gap(AppLayout.getHeight(15)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            padding: EdgeInsets.only(left: 20),
+            padding: EdgeInsets.only(left: AppLayout.getHeight(20)),
             child: Row(
                 children: changeList
                     .map((singleChange) => OutfitView(change: singleChange))
@@ -99,7 +105,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(15),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -119,10 +125,10 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          const Gap(15),
+          Gap(AppLayout.getHeight(15)),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.only(left: 20),
+              padding: EdgeInsets.only(left: AppLayout.getHeight(20)),
               child: Row(
                   children: outfitList
                       .map(
