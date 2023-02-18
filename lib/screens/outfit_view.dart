@@ -8,14 +8,15 @@ import 'package:my_outfits/widgets/thick_container.dart';
 import '../utils/app_style.dart';
 
 class OutfitView extends StatelessWidget {
-  const OutfitView({Key? key}) : super(key: key);
+  final Map<String, dynamic> change;
+  const OutfitView({Key? key, required this.change}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return SizedBox(
       width: size.width * 0.85,
-      height: 200,
+      height: 220,
       child: Container(
         margin: const EdgeInsets.only(right: 16),
         child: Column(
@@ -32,7 +33,7 @@ class OutfitView extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "Polo Shirt",
+                        change['origin']['type'],
                         style:
                             Styles.headLineStyle3.copyWith(color: Colors.white),
                       ),
@@ -74,7 +75,7 @@ class OutfitView extends StatelessWidget {
                       const ThickContainer(),
                       Expanded(child: Container()),
                       Text(
-                        "Giordano",
+                        change['info']['brand'],
                         style:
                             Styles.headLineStyle3.copyWith(color: Colors.white),
                       )
@@ -87,19 +88,19 @@ class OutfitView extends StatelessWidget {
                       SizedBox(
                         width: 90,
                         child: Text(
-                          'HKTVMall',
+                          change['origin']['venue'],
                           style: Styles.textStyle.copyWith(color: Colors.white),
                         ),
                       ),
                       Text(
-                        'HKD 139',
+                        change['price'],
                         style:
                             Styles.headLineStyle3.copyWith(color: Colors.white),
                       ),
                       SizedBox(
                         width: 80,
                         child: Text(
-                          '  5 months',
+                          change['info']['lasts'],
                           style: Styles.textStyle.copyWith(color: Colors.white),
                         ),
                       )
@@ -172,13 +173,13 @@ class OutfitView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Type',
+                          change['detailed info']['type'],
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
                         const Gap(5),
                         Text(
-                          'Short Sleeves',
+                          change['detailed info']['class'],
                           style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
@@ -188,13 +189,13 @@ class OutfitView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          'Main Color',
+                          change['detailed info']['main_feature'],
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
                         const Gap(5),
                         Text(
-                          'White',
+                          change['detailed info']['main_feature_detail'],
                           style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
@@ -204,13 +205,13 @@ class OutfitView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'Tag',
+                          change['detailed info']['specific'],
                           style: Styles.headLineStyle3
                               .copyWith(color: Colors.white),
                         ),
                         const Gap(5),
                         Text(
-                          'Square Collar',
+                          change['detailed info']['specific_detail'],
                           style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),

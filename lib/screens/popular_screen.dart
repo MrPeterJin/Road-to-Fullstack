@@ -35,20 +35,20 @@ class PopularScreen extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: Styles.primaryColor,
-              image: const DecorationImage(
+              image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("assets/images/tshirt.png"),
+                image: AssetImage("assets/images/${outfit['image']}"),
               ),
             ),
           ),
           const Gap(20),
           Text(
-            "riveriswild UO Exclusive Dance Tee",
+            "${outfit['name']}",
             style: Styles.headLineStyle2.copyWith(color: Styles.kakiColor),
           ),
           const Gap(5),
           Text(
-            "URBAN OUTFITTERS",
+            "${outfit['brand']}",
             style: Styles.headLineStyle4.copyWith(color: Colors.white),
           ),
           const Gap(8),
@@ -62,7 +62,7 @@ class PopularScreen extends StatelessWidget {
               ),
               const Gap(5),
               Text(
-                "4.5",
+                "${outfit['rate']}",
                 style: Styles.headLineStyle4.copyWith(color: Colors.white),
               ),
             ],
