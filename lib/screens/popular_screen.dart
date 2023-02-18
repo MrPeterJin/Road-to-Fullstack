@@ -14,12 +14,15 @@ class PopularScreen extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return Container(
       width: size.width * 0.6,
-      height: 320,
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 17),
-      margin: const EdgeInsets.only(right: 17, top: 5),
+      height: AppLayout.getHeight(320),
+      padding: EdgeInsets.symmetric(
+          horizontal: AppLayout.getHeight(15),
+          vertical: AppLayout.getHeight(17)),
+      margin: EdgeInsets.only(
+          right: AppLayout.getHeight(17), top: AppLayout.getHeight(5)),
       decoration: BoxDecoration(
           color: Styles.primaryColor,
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(AppLayout.getHeight(24)),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.shade200,
@@ -31,9 +34,9 @@ class PopularScreen extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 150,
+            height: AppLayout.getHeight(150),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(AppLayout.getHeight(12)),
               color: Styles.primaryColor,
               image: DecorationImage(
                 fit: BoxFit.cover,
