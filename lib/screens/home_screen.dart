@@ -41,8 +41,8 @@ class HomeScreen extends StatelessWidget {
                           )
                         ]),
                     Container(
-                        height: AppLayout.getHeight(50),
-                        width: AppLayout.getWidth(10),
+                        height: AppLayout.getHeight(60),
+                        width: AppLayout.getWidth(60),
                         decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.circular(AppLayout.getHeight(10)),

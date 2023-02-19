@@ -20,7 +20,7 @@ Detailed development records are in the [records](/records/) folder. The applica
 
 The screenshot of the main page is displayed below:      
 ![home.png](/records/2022-02-18/home.png)
-
+![search.png](/records/2022-02-18/search.png)
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.
 - [Flutter docs](https://api.flutter.dev/index.html)
