@@ -27,9 +27,9 @@ class SearchScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
                 color: const Color(0xFFF4F6FD),
               ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppLayout.getWidth(20),
-                  vertical: AppLayout.getHeight(10)),
+              // padding: EdgeInsets.symmetric(
+              //     horizontal: AppLayout.getWidth(0),
+              //     vertical: AppLayout.getHeight(0)),
               child: Row(children: [
                 Container(
                   width: size.width * 0.44,
