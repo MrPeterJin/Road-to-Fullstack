@@ -22,28 +22,63 @@ class SearchScreen extends StatelessWidget {
               style: Styles.headLineStyle
                   .copyWith(fontSize: AppLayout.getWidth(35))),
           Gap(AppLayout.getHeight(20)),
+          FittedBox(
+            child: Container(
+                padding:
+                    EdgeInsets.symmetric(vertical: AppLayout.getHeight(3.5)),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
+                  color: const Color(0xFFF4F6FD),
+                ),
+                // padding: EdgeInsets.symmetric(
+                //     horizontal: AppLayout.getWidth(0),
+                //     vertical: AppLayout.getHeight(0)),
+                child: Row(children: [
+                  Container(
+                    width: size.width * 0.44,
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getWidth(7),
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.horizontal(
+                          left: Radius.circular(AppLayout.getHeight(50))),
+                      color: Colors.white,
+                    ),
+                    child: Center(child: Text("By Time")),
+                  ),
+                  Container(
+                    width: size.width * 0.44,
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getWidth(7),
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.horizontal(
+                          right: Radius.circular(AppLayout.getHeight(50))),
+                      color: Colors.transparent,
+                    ),
+                    child: Center(child: Text("By Color")),
+                  ),
+                ])),
+          ),
+          Gap(AppLayout.getHeight(25)),
           Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
-                color: const Color(0xFFF4F6FD),
-              ),
-              // padding: EdgeInsets.symmetric(
-              //     horizontal: AppLayout.getWidth(0),
-              //     vertical: AppLayout.getHeight(0)),
-              child: Row(children: [
-                Container(
-                  width: size.width * 0.44,
-                  padding: EdgeInsets.symmetric(
-                    vertical: AppLayout.getWidth(7),
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius:
-                        BorderRadius.circular(AppLayout.getHeight(50)),
-                    color: Colors.white,
-                  ),
-                  child: Center(child: Text("By Time")),
+            padding: EdgeInsets.symmetric(
+                vertical: AppLayout.getHeight(12),
+                horizontal: AppLayout.getWidth(12)),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(AppLayout.getWidth(10))),
+            child: Row(
+              children: [
+                const Icon(Icons.date_range, color: Color(0xFFBFC20F)),
+                Gap(AppLayout.getWidth(10)),
+                Text(
+                  "Fliter by date",
+                  style: Styles.textStyle,
                 )
-              ])),
+              ],
+            ),
+          )
         ],
       ),
     );
