@@ -12,15 +12,16 @@ git clone https://github.com/MrPeterJin/my_outfits.git
 and observe the whole framework, or try to complie by yourself. Since I am still learning this framework, I cannot produce the complied version of this software at this time.
 
 ## Records as present
-Stage 1: Basic Framework (Completed on Feb. 14, 2022)                  
+Stage 1: Basic Framework (Completed on Feb. 14, 2023)                  
 Stage 2: Static Information with Each Section
-- Main Page (Completed on Feb. 18, 2022)
+- Main Page (Completed on Feb. 18, 2023)
+- Search Page (Completed on Feb. 21, 2023)
 
 Detailed development records are in the [records](/records/) folder. The application successfully runs on Android, Linux, and web (Chrome).
 
 The screenshot of the main page is displayed below:      
 ![home.png](/records/2022-02-18/home.png)
-![search.png](/records/2022-02-18/search.png)
+![search.png](/records/2022-02-21/search.png)
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.
 - [Flutter docs](https://api.flutter.dev/index.html)

@@ -4,6 +4,7 @@ import 'package:my_outfits/screens/outfit_view.dart';
 import 'package:my_outfits/screens/popular_screen.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:gap/gap.dart';
+import 'package:my_outfits/widgets/double_text_widget.dart';
 
 import '../utils/app_info_list.dart';
 import '../utils/app_layout.dart';
@@ -73,24 +74,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Gap(AppLayout.getHeight(30)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Upcoming Changes",
-                      style: Styles.headLineStyle2,
-                    ),
-                    InkWell(
-                        onTap: () {
-                          print("tapped");
-                        },
-                        child: Text(
-                          "View all",
-                          style: Styles.textStyle
-                              .copyWith(color: Styles.primaryColor),
-                        ))
-                  ],
-                )
+                const AppDoubleTextWidget(
+                    bigText: "Upcoming Changes", smallText: "View All")
               ],
             ),
           ),
@@ -105,26 +90,10 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(15),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Your Popular Outfits",
-                  style: Styles.headLineStyle2,
-                ),
-                InkWell(
-                    onTap: () {
-                      print("tapped");
-                    },
-                    child: Text(
-                      "View all",
-                      style:
-                          Styles.textStyle.copyWith(color: Styles.primaryColor),
-                    ))
-              ],
-            ),
-          ),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
+              child: const AppDoubleTextWidget(
+                  bigText: "Your Popular Outfits", smallText: "View All")),
           Gap(AppLayout.getHeight(15)),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
