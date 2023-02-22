@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:my_outfits/utils/app_layout.dart';
 import 'package:my_outfits/utils/app_style.dart';
+import 'package:my_outfits/widgets/column_layout.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -93,6 +94,113 @@ class ProfileScreen extends StatelessWidget {
                 ],
               )
             ],
+          ),
+          Gap(AppLayout.getHeight(8)),
+          Divider(
+            color: Colors.grey.shade300,
+          ),
+          Gap(AppLayout.getHeight(8)),
+          Stack(children: [
+            Container(
+              height: AppLayout.getHeight(90),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppLayout.getHeight(18)),
+                color: Styles.primaryColor,
+              ),
+            ),
+            Positioned(
+              right: -45,
+              top: -40,
+              child: Container(
+                padding: EdgeInsets.all(AppLayout.getHeight(30)),
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  shape: BoxShape.circle,
+                  border: Border.all(width: 18, color: Color(0xFF264CD2)),
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(
+                  horizontal: AppLayout.getHeight(25),
+                  vertical: AppLayout.getHeight(20)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    maxRadius: 25,
+                    backgroundColor: Colors.white,
+                    child: Icon(
+                      FluentIcons.lightbulb_filament_16_regular,
+                      color: Styles.primaryColor,
+                      size: 27,
+                    ),
+                  ),
+                  Gap(AppLayout.getHeight(15)),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "You\'v got a new reward",
+                        style: Styles.headLineStyle2.copyWith(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        "You have 20 outfits in your closet",
+                        style: Styles.headLineStyle2.copyWith(
+                            color: Colors.white.withOpacity(0.9),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ]),
+          Gap(AppLayout.getHeight(8)),
+          Text("Accumulated Expense", style: Styles.headLineStyle2),
+          Container(
+            child: Column(children: [
+              Gap(AppLayout.getHeight(15)),
+              const Text("HK\$ 114,514",
+                  style: TextStyle(fontSize: 45, fontWeight: FontWeight.w600)),
+              Gap(AppLayout.getHeight(20)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Expense Accured",
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                  Text("22 Feb 2023",
+                      style: Styles.headLineStyle4.copyWith(fontSize: 16)),
+                ],
+              ),
+              Gap(AppLayout.getHeight(4)),
+              Divider(
+                color: Colors.grey.shade300,
+              ),
+              Gap(AppLayout.getHeight(4)),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  AppColumnLayout(
+                    alignment: CrossAxisAlignment.start,
+                    firsttext: "HK\$ 198",
+                    secondtext: "BIANCO Sneakers",
+                    isColor: false,
+                  ),
+                  AppColumnLayout(
+                    alignment: CrossAxisAlignment.end,
+                    firsttext: "FILA Website",
+                    secondtext: "Expense at",
+                    isColor: false,
+                  ),
+                ],
+              )
+            ]),
           )
         ],
       ),
