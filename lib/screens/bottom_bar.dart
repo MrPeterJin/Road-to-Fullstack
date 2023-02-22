@@ -1,6 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:my_outfits/screens/home_screen.dart';
+import 'package:my_outfits/screens/profile_screen.dart';
 import 'package:my_outfits/screens/search_screen.dart';
 
 class BottomBar extends StatefulWidget {
@@ -17,7 +18,7 @@ class _BottomBarState extends State<BottomBar> {
     const HomeScreen(),
     const SearchScreen(),
     const Text("Outfits"),
-    const Text("Profile")
+    const ProfileScreen()
   ];
 
   void _onItemTapped(int index) {
