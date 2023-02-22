@@ -199,7 +199,8 @@ class ProfileScreen extends StatelessWidget {
                     isColor: false,
                   ),
                 ],
-              )
+              ),
+              Gap(AppLayout.getHeight(12)),
             ]),
           )
         ],
