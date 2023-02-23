@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 import 'package:my_outfits/utils/app_layout.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:my_outfits/widgets/column_layout.dart';
+import 'package:my_outfits/widgets/layout_builder_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -161,12 +162,24 @@ class ProfileScreen extends StatelessWidget {
               ),
             )
           ]),
-          Gap(AppLayout.getHeight(8)),
+          Gap(AppLayout.getHeight(25)),
           Text("Accumulated Expense", style: Styles.headLineStyle2),
+          Gap(AppLayout.getHeight(20)),
           Container(
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(15)),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppLayout.getHeight(18)),
+                color: Styles.bgColor,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.shade200,
+                    blurRadius: 1,
+                    spreadRadius: 1,
+                  )
+                ]),
             child: Column(children: [
               Gap(AppLayout.getHeight(15)),
-              const Text("HK\$ 114,514",
+              const Text("HK\$ 1,514",
                   style: TextStyle(fontSize: 45, fontWeight: FontWeight.w600)),
               Gap(AppLayout.getHeight(20)),
               Row(
@@ -174,7 +187,7 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   Text("Expense Accured",
                       style: Styles.headLineStyle4.copyWith(fontSize: 16)),
-                  Text("22 Feb 2023",
+                  Text("23 Feb 2023",
                       style: Styles.headLineStyle4.copyWith(fontSize: 16)),
                 ],
               ),
@@ -201,7 +214,54 @@ class ProfileScreen extends StatelessWidget {
                 ],
               ),
               Gap(AppLayout.getHeight(12)),
+              AppLayoutBuilderWidget(sections: 12, isColor: false),
+              Gap(AppLayout.getHeight(12)),
+              const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    AppColumnLayout(
+                      alignment: CrossAxisAlignment.start,
+                      firsttext: "CN\¥ 99",
+                      secondtext: "SUPIMA COTTON",
+                      isColor: false,
+                    ),
+                    AppColumnLayout(
+                      alignment: CrossAxisAlignment.end,
+                      firsttext: "Popcorn",
+                      secondtext: "Expense at",
+                      isColor: false,
+                    ),
+                  ]),
+              Gap(AppLayout.getHeight(12)),
+              AppLayoutBuilderWidget(sections: 12, isColor: false),
+              Gap(AppLayout.getHeight(12)),
+              const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    AppColumnLayout(
+                      alignment: CrossAxisAlignment.start,
+                      firsttext: "NT\$ 449",
+                      secondtext: "Single Layer Elastic Pants",
+                      isColor: false,
+                    ),
+                    AppColumnLayout(
+                      alignment: CrossAxisAlignment.end,
+                      firsttext: "7NET shop",
+                      secondtext: "Expense at",
+                      isColor: false,
+                    ),
+                  ]),
+              Gap(AppLayout.getHeight(25)),
             ]),
+          ),
+          Gap(AppLayout.getHeight(25)),
+          InkWell(
+            onTap: () => print("tapped"),
+            child: Center(
+              child: Text("How to get more rewards",
+                  style: Styles.headLineStyle2.copyWith(
+                      color: Styles.primaryColor, fontWeight: FontWeight.w500)),
+            ),
           )
         ],
       ),
