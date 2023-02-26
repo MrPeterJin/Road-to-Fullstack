@@ -8,6 +8,11 @@ class OutfitScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Styles.bgColor,
+      appBar: AppBar(
+        title: Center(child: Text('Outfit')),
+        backgroundColor: Styles.bgColor,
+        elevation: 0,
+      ),
     );
   }
 }
