@@ -9,7 +9,9 @@ import '../utils/app_style.dart';
 
 class OutfitView extends StatelessWidget {
   final Map<String, dynamic> change;
-  const OutfitView({Key? key, required this.change}) : super(key: key);
+  final bool? isColor;
+  const OutfitView({Key? key, required this.change, this.isColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class OutfitView extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: const Color(0XFF526799),
+                  color: isColor == null ? Color(0XFF526799) : Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppLayout.getHeight(21)),
                       topRight: Radius.circular(AppLayout.getHeight(21)))),
@@ -34,11 +36,15 @@ class OutfitView extends StatelessWidget {
                     children: [
                       Text(
                         change['origin']['type'],
-                        style:
-                            Styles.headLineStyle3.copyWith(color: Colors.white),
+                        style: isColor == null
+                            ? Styles.headLineStyle3
+                                .copyWith(color: Colors.white)
+                            : Styles.headLineStyle3,
                       ),
                       Expanded(child: Container()),
-                      const ThickContainer(),
+                      const ThickContainer(
+                        isColor: true,
+                      ),
                       Expanded(
                           child: Stack(children: [
                         SizedBox(
@@ -72,7 +78,9 @@ class OutfitView extends StatelessWidget {
                                   color: Colors.white,
                                 ))),
                       ])),
-                      const ThickContainer(),
+                      const ThickContainer(
+                        isColor: true,
+                      ),
                       Expanded(child: Container()),
                       Text(
                         change['info']['brand'],

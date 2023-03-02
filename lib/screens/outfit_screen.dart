@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:my_outfits/screens/outfit_view.dart';
+import 'package:my_outfits/utils/app_info_list.dart';
 import 'package:my_outfits/utils/app_layout.dart';
 import 'package:my_outfits/utils/app_style.dart';
 import 'package:my_outfits/widgets/outfit_tabs.dart';
@@ -23,7 +25,14 @@ class OutfitScreen extends StatelessWidget {
               style: Styles.headLineStyle,
             ),
             Gap(AppLayout.getHeight(20)),
-            const AddOutfitTabs(firstTab: "By Occasion", secondTab: "By Season")
+            const AddOutfitTabs(firstTab: "By Occasion", secondTab: "By Color"),
+            Container(
+              padding: EdgeInsets.only(left: AppLayout.getHeight(15)),
+              child: OutfitView(
+                change: changeList[0],
+                isColor: true,
+              ),
+            ),
           ],
         ),
       ]),
