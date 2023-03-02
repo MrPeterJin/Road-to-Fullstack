@@ -5,8 +5,9 @@ import '../utils/app_layout.dart';
 class AddOutfitTabs extends StatelessWidget {
   final String firstTab;
   final String secondTab;
-  const AddOutfitTabs({Key? key, required this.firstTab, this.secondTab})
-      : super(key: key); 
+  const AddOutfitTabs(
+      {Key? key, required this.firstTab, required this.secondTab})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,9 @@ class AddOutfitTabs extends StatelessWidget {
                     left: Radius.circular(AppLayout.getHeight(50))),
                 color: Colors.white,
               ),
-              child: const Center(child: Text(firstTab)),
+              child: Center(
+                child: Text(firstTab),
+              ),
             ),
             Container(
               width: size.width * 0.44,
@@ -44,7 +47,7 @@ class AddOutfitTabs extends StatelessWidget {
                     right: Radius.circular(AppLayout.getHeight(50))),
                 color: Colors.transparent,
               ),
-              child: const Center(child: Text(secondTab)),
+              child: Center(child: Text(secondTab)),
             ),
           ])),
     );
