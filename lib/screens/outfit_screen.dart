@@ -25,7 +25,8 @@ class OutfitScreen extends StatelessWidget {
               style: Styles.headLineStyle,
             ),
             Gap(AppLayout.getHeight(20)),
-            const AddOutfitTabs(firstTab: "By Occasion", secondTab: "By Color"),
+            const AddOutfitTabs(firstTab: "Upcoming", secondTab: "Storaged"),
+            Gap(AppLayout.getHeight(20)),
             Container(
               padding: EdgeInsets.only(left: AppLayout.getHeight(15)),
               child: OutfitView(

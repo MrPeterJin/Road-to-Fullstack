@@ -103,19 +103,25 @@ class OutfitView extends StatelessWidget {
                         width: AppLayout.getWidth(80),
                         child: Text(
                           change['origin']['venue'],
-                          style: Styles.textStyle.copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.textStyle.copyWith(color: Colors.white)
+                              : Styles.headLineStyle4,
                         ),
                       ),
                       Text(
                         change['price'],
-                        style:
-                            Styles.headLineStyle3.copyWith(color: Colors.white),
+                        style: isColor == null
+                            ? Styles.headLineStyle3
+                                .copyWith(color: Colors.white)
+                            : Styles.headLineStyle4,
                       ),
                       SizedBox(
                         width: AppLayout.getWidth(80),
                         child: Text(
                           change['info']['lasts'],
-                          style: Styles.textStyle.copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.textStyle.copyWith(color: Colors.white)
+                              : Styles.headLineStyle4,
                         ),
                       )
                     ],
@@ -124,14 +130,16 @@ class OutfitView extends StatelessWidget {
               ),
             ),
             Container(
-              color: Styles.orangeColor,
+              color: isColor == null ? Styles.orangeColor : Colors.white,
               child: Row(children: [
                 SizedBox(
                     height: AppLayout.getHeight(20),
                     width: AppLayout.getWidth(10),
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: isColor == null
+                              ? Colors.grey.shade300
+                              : Colors.white,
                           borderRadius: BorderRadius.only(
                               topRight:
                                   Radius.circular(AppLayout.getHeight(10)),
@@ -166,7 +174,9 @@ class OutfitView extends StatelessWidget {
                     width: AppLayout.getWidth(10),
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: isColor == null
+                              ? Colors.grey.shade300
+                              : Colors.white,
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(AppLayout.getHeight(10)),
                               bottomLeft:
