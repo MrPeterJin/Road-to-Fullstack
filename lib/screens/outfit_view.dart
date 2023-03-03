@@ -59,12 +59,14 @@ class OutfitView extends StatelessWidget {
                                 mainAxisSize: MainAxisSize.max,
                                 children: List.generate(
                                     (constraints.constrainWidth() / 6).floor(),
-                                    (index) => const SizedBox(
+                                    (index) => SizedBox(
                                           width: 3,
                                           height: 1,
                                           child: DecoratedBox(
                                             decoration: BoxDecoration(
-                                                color: Colors.white),
+                                                color: isColor == null
+                                                    ? Colors.white
+                                                    : Colors.grey.shade300),
                                           ),
                                         )),
                               );
@@ -75,7 +77,9 @@ class OutfitView extends StatelessWidget {
                             child: Transform.scale(
                                 scale: 1.3,
                                 child: LineIcon.tShirt(
-                                  color: Colors.white,
+                                  color: isColor == null
+                                      ? Colors.white
+                                      : const Color(0xFF8ACCF7),
                                 ))),
                       ])),
                       const ThickContainer(
@@ -84,8 +88,10 @@ class OutfitView extends StatelessWidget {
                       Expanded(child: Container()),
                       Text(
                         change['info']['brand'],
-                        style:
-                            Styles.headLineStyle3.copyWith(color: Colors.white),
+                        style: isColor == null
+                            ? Styles.headLineStyle3
+                                .copyWith(color: Colors.white)
+                            : Styles.headLineStyle3,
                       )
                     ],
                   ),
