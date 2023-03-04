@@ -186,7 +186,7 @@ class OutfitView extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: Styles.orangeColor,
+                  color: isColor == null ? Styles.orangeColor : Colors.white,
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(AppLayout.getHeight(21)),
                       bottomRight: Radius.circular(AppLayout.getHeight(21)))),
@@ -204,14 +204,18 @@ class OutfitView extends StatelessWidget {
                       children: [
                         Text(
                           change['detailed info']['type'],
-                          style: Styles.headLineStyle3
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle3
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle3,
                         ),
                         Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['class'],
-                          style: Styles.headLineStyle4
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle4
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle4,
                         ),
                       ],
                     ),
@@ -220,14 +224,18 @@ class OutfitView extends StatelessWidget {
                       children: [
                         Text(
                           change['detailed info']['main_feature'],
-                          style: Styles.headLineStyle3
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle3
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle3,
                         ),
                         Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['main_feature_detail'],
-                          style: Styles.headLineStyle4
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle4
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle4,
                         ),
                       ],
                     ),
@@ -236,14 +244,18 @@ class OutfitView extends StatelessWidget {
                       children: [
                         Text(
                           change['detailed info']['specific'],
-                          style: Styles.headLineStyle3
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle3
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle3,
                         ),
                         Gap(AppLayout.getHeight(5)),
                         Text(
                           change['detailed info']['specific_detail'],
-                          style: Styles.headLineStyle4
-                              .copyWith(color: Colors.white),
+                          style: isColor == null
+                              ? Styles.headLineStyle4
+                                  .copyWith(color: Colors.white)
+                              : Styles.headLineStyle4,
                         ),
                       ],
                     ),
