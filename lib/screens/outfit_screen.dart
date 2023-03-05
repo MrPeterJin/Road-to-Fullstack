@@ -13,6 +13,7 @@ class OutfitScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return Scaffold(
+      backgroundColor: Styles.bgColor,
       body: Stack(children: [
         ListView(
           padding: EdgeInsets.symmetric(
@@ -22,7 +23,9 @@ class OutfitScreen extends StatelessWidget {
             Gap(AppLayout.getHeight(40)),
             Text(
               "Outfits",
-              style: Styles.headLineStyle,
+              style: Styles.headLineStyle.copyWith(
+                fontSize: AppLayout.getHeight(40),
+              ),
             ),
             Gap(AppLayout.getHeight(20)),
             const AddOutfitTabs(firstTab: "Upcoming", secondTab: "Storaged"),

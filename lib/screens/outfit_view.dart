@@ -100,7 +100,7 @@ class OutfitView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: AppLayout.getWidth(80),
+                        width: AppLayout.getWidth(74),
                         child: Text(
                           change['origin']['venue'],
                           style: isColor == null
@@ -116,7 +116,7 @@ class OutfitView extends StatelessWidget {
                             : Styles.headLineStyle4,
                       ),
                       SizedBox(
-                        width: AppLayout.getWidth(80),
+                        width: AppLayout.getWidth(79),
                         child: Text(
                           change['info']['lasts'],
                           style: isColor == null
@@ -158,12 +158,12 @@ class OutfitView extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         children: List.generate(
                             (constraints.constrainWidth() / 15).floor(),
-                            (index) => const SizedBox(
+                            (index) => SizedBox(
                                   width: 5,
                                   height: 1,
                                   child: DecoratedBox(
                                       decoration:
-                                          BoxDecoration(color: Colors.white)),
+                                          BoxDecoration(color: isColor == null?Colors.white:Colors.grey.shade500)),
                                 )),
                       );
                     },
