@@ -2,6 +2,8 @@
 
 A learn-by-doing flutter project, aimming at building a outfit managment system of MrPeterJin (or someone else). Due to the high capacity of MrPeterJin's academic load, this project may or may not be completed and have the possibility of infinitly halt at some point.
 
+Update: Due to the academic load, this project is halted for a certain time. The code is still available for reference.
+
 ## Getting Started
 Firstly, you may follow the [Flutter](https://docs.flutter.dev/get-started/install) website to install the framework.
 
