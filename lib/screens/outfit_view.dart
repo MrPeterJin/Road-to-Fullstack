@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:my_outfits/utils/app_layout.dart';
 import 'package:my_outfits/widgets/thick_container.dart';
@@ -18,7 +19,7 @@ class OutfitView extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return SizedBox(
       width: size.width * 0.85,
-      height: AppLayout.getHeight(200),
+      height: AppLayout.getHeight(GetPlatform.isAndroid == true ? 167 : 169),
       child: Container(
         margin: EdgeInsets.only(right: AppLayout.getHeight(16)),
         child: Column(
@@ -162,8 +163,10 @@ class OutfitView extends StatelessWidget {
                                   width: 5,
                                   height: 1,
                                   child: DecoratedBox(
-                                      decoration:
-                                          BoxDecoration(color: isColor == null?Colors.white:Colors.grey.shade500)),
+                                      decoration: BoxDecoration(
+                                          color: isColor == null
+                                              ? Colors.white
+                                              : Colors.grey.shade500)),
                                 )),
                       );
                     },
