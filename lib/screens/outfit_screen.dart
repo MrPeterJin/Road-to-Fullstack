@@ -17,8 +17,8 @@ class OutfitScreen extends StatelessWidget {
       body: Stack(children: [
         ListView(
           padding: EdgeInsets.symmetric(
-              horizontal: AppLayout.getHeight(20),
-              vertical: AppLayout.getHeight(20)),
+              horizontal: AppLayout.getHeight(15),
+              vertical: AppLayout.getHeight(15)),
           children: [
             Gap(AppLayout.getHeight(40)),
             Text(
@@ -38,14 +38,13 @@ class OutfitScreen extends StatelessWidget {
               ),
             ),
             Container(
-              padding:
-                  EdgeInsets.symmetric(horizontal: AppLayout.getHeight(15)),
+              padding: EdgeInsets.symmetric(horizontal: 30),
               color: Colors.white,
               child: Column(children: [
                 Row(
                   children: [
                     Column(
-                      children: [Text("")],
+                      children: [Text("aaa", style: Styles.headLineStyle3)],
                     )
                   ],
                 )

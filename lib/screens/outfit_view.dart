@@ -19,14 +19,16 @@ class OutfitView extends StatelessWidget {
     final size = AppLayout.getSize(context);
     return SizedBox(
       width: size.width * 0.85,
-      height: AppLayout.getHeight(GetPlatform.isAndroid == true ? 167 : 169),
+      height: AppLayout.getHeight(GetPlatform.isAndroid == true ? 187 : 189),
       child: Container(
         margin: EdgeInsets.only(right: AppLayout.getHeight(16)),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: isColor == null ? Color(0XFF526799) : Colors.white,
+                  color:
+                      isColor == null ? const Color(0XFF526799) : Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppLayout.getHeight(21)),
                       topRight: Radius.circular(AppLayout.getHeight(21)))),
@@ -191,8 +193,10 @@ class OutfitView extends StatelessWidget {
               decoration: BoxDecoration(
                   color: isColor == null ? Styles.orangeColor : Colors.white,
                   borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(AppLayout.getHeight(21)),
-                      bottomRight: Radius.circular(AppLayout.getHeight(21)))),
+                      bottomLeft: Radius.circular(
+                          AppLayout.getHeight(isColor == null ? 21 : 0)),
+                      bottomRight: Radius.circular(
+                          AppLayout.getHeight(isColor == null ? 21 : 0)))),
               padding: EdgeInsets.only(
                   left: AppLayout.getHeight(16),
                   top: AppLayout.getHeight(16),
