@@ -12,7 +12,10 @@ The overall roadmap I would take follows the [The Better Dev](https://www.thebet
 ### Stage 1: HTML/CSS
 
 
+
 For the records of each project, please refer to the `README.md` file in each project folder.
 
 ## Projects
-- [My Outfits](/my_outfits/): A learn-by-doing flutter project, aimming at building a outfit managment system of MrPeterJin (or someone else). This is the very first project I build using Flutter framework. However, at this time I have zero knowledge of the front/back end and build this project by copying the code from the [Flutter 3.3 Master Class for Beginners to Advanced | Ticket Booking App Development Tutorial](https://www.youtube.com/watch?v=71AsYo2q_0Y) video. Due to the limitation of the systematic knowledge, I stopped at building the basic framework of the application. 
+- [My Outfits](./my_outfits/): A learn-by-doing flutter project, aimming at building a outfit managment system of MrPeterJin (or someone else). This is the very first project I build using Flutter framework. However, at this time I have zero knowledge of the front/back end and build this project by copying the code from the [Flutter 3.3 Master Class for Beginners to Advanced | Ticket Booking App Development Tutorial](https://www.youtube.com/watch?v=71AsYo2q_0Y) video. Due to the limitation of the systematic knowledge, I stopped at building the basic framework of the application. (Started on Feb 14, 2023; Completed on May 27, 2023)
+
+- [Youtube Clone](./youtube_clone/) A learn-by-doing html/css project. Detail updated as project progresses. (Started on May 27, 2023)

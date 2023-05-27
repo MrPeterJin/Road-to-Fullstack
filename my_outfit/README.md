@@ -19,7 +19,7 @@ Stage 2: Static Information with Each Section
 - Profile Page (Completed on Feb. 23, 2023)
 - Outfit Page (Completed on May. 27, 2023)
 
-Detailed development records are in the [records](/records/) folder. The application successfully runs on Android, Linux, and web (Chrome).
+Detailed development records are in the [records](./records/) folder. The application successfully runs on Android, Linux, and web (Chrome).
 
 The screenshot of the main page is displayed below: 
 
