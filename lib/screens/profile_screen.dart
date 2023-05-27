@@ -118,7 +118,7 @@ class ProfileScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.transparent,
                   shape: BoxShape.circle,
-                  border: Border.all(width: 18, color: Color(0xFF264CD2)),
+                  border: Border.all(width: 18, color: const Color(0xFF264CD2)),
                 ),
               ),
             ),
@@ -145,7 +145,7 @@ class ProfileScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
-                        "You\'v got a new reward",
+                        "You'v got a new reward",
                         style: Styles.headLineStyle2.copyWith(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
@@ -214,14 +214,14 @@ class ProfileScreen extends StatelessWidget {
                 ],
               ),
               Gap(AppLayout.getHeight(12)),
-              AppLayoutBuilderWidget(sections: 12, isColor: false),
+              const AppLayoutBuilderWidget(sections: 12, isColor: false),
               Gap(AppLayout.getHeight(12)),
               const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     AppColumnLayout(
                       alignment: CrossAxisAlignment.start,
-                      firsttext: "CN\¥ 99",
+                      firsttext: "CN¥ 99",
                       secondtext: "SUPIMA COTTON",
                       isColor: false,
                     ),
@@ -233,7 +233,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ]),
               Gap(AppLayout.getHeight(12)),
-              AppLayoutBuilderWidget(sections: 12, isColor: false),
+              const AppLayoutBuilderWidget(sections: 12, isColor: false),
               Gap(AppLayout.getHeight(12)),
               const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

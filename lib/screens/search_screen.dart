@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:my_outfits/utils/app_layout.dart';
@@ -26,7 +25,7 @@ class SearchScreen extends StatelessWidget {
               style: Styles.headLineStyle
                   .copyWith(fontSize: AppLayout.getWidth(35))),
           Gap(AppLayout.getHeight(20)),
-          AddOutfitTabs(firstTab: "By Occasion", secondTab: "By Color"),
+          const AddOutfitTabs(firstTab: "By Occasion", secondTab: "By Color"),
           Gap(AppLayout.getHeight(25)),
           const AppIconText(
             icon: Icons.date_range,
@@ -98,7 +97,7 @@ class SearchScreen extends StatelessWidget {
                         width: size.width * 0.44,
                         height: AppLayout.getHeight(180),
                         decoration: BoxDecoration(
-                          color: Color(0xFF3AB8B8),
+                          color: const Color(0xFF3AB8B8),
                           borderRadius:
                               BorderRadius.circular(AppLayout.getHeight(18)),
                         ),
@@ -132,7 +131,7 @@ class SearchScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               border: Border.all(
-                                  color: Color(0xFF189999), width: 18),
+                                  color: const Color(0xFF189999), width: 18),
                               color: Colors.transparent),
                         ),
                       )

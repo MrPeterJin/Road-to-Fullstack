@@ -37,24 +37,6 @@ class OutfitScreen extends StatelessWidget {
                 isColor: true,
               ),
             ),
-            Container(
-              padding:
-                  EdgeInsets.symmetric(horizontal: AppLayout.getHeight(15)),
-              color: Colors.white,
-              child: Column(children: [
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Text("aaa", style: Styles.headLineStyle3),
-                        Gap(AppLayout.getHeight(5)),
-                        Text("bbb", style: Styles.headLineStyle4)
-                      ],
-                    )
-                  ],
-                )
-              ]),
-            )
           ],
         ),
       ]),
