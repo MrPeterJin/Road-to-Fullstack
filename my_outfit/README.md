@@ -25,7 +25,7 @@ The screenshot of the main page is displayed below:
 
 | Main Page | Search Page | Outfit Page | Profile Page |
 | :---: | :---: | :---: | :---: |
-| ![home.png](my_outfit/records/2023-02-23/home.png) | ![search.png](my_outfit/records/2023-02-23/search.png) | ![outfit.png](my_outfit/records/2023-05-27/outfit.png) | ![profile.png](my_outfit/records/2023-02-23/profile.png) |
+| ![home.png](./records/2023-02-23/home.png) | ![search.png](./records/2023-02-23/search.png) | ![outfit.png](./records/2023-05-27/outfit.png) | ![profile.png](./records/2023-02-23/profile.png) |
 
 Due to lack of the frontend knowledge, I would like to stop the development of this project at this point. However, I will continue to learn the basics of fullstack, and I *may* will come back to this project in the future.
 
