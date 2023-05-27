@@ -2,6 +2,7 @@
 
 This is a repository to keep track of my progress in the road to learn the knowledge of being a fullstack engineer. I do not have a clear goal of what I want to do in the future, but I do want to learn the knowledge of fullstack. I will keep track of my progress in this repository.
 
+*Note:* This repository is not a tutorial for learning fullstack. It is just a record of my progress. Also, it could be paused or halted at any time due to the high capacity of my academic load.
 ## Getting Started
 I am taking the learn-by-doing approach to learn the knowledge of fullstack. For any segment of knowledge, I will try to build a project from scratch, and learn the knowledge I need to know during the process. For learning materials, I will try to use the official documentation and YouTube videos as much as possible.
 
