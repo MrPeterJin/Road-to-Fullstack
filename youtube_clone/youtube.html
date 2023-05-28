@@ -9,28 +9,84 @@
                               display: block;
                     }
 
-                    .search-bar {}
+                    .search-bar {
+                              display: block;
+                    }
+
+                    .video-preview {
+                              width: 300px;
+                              display: inline-block;
+                              vertical-align: top;
+                              margin-right: 15px;
+                    }
+
+                    .channel-picture {
+                              width: 50px;
+                              display: inline-block;
+                              vertical-align: top;
+                    }
 
                     .video-title {
-                              width: 300px;
+                              margin-top: 0;
+                    }
+
+                    .video-info {
+                              width: 200px;
+                              display: inline-block;
+                    }
+
+                    .profile-picture {
+                              width: 100%;
+                              height: 50px;
+                              border-radius: 50%;
                     }
           </style>
 </head>
 
 <body>
           <input class="search-bar" type="text" placeholder="Search">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-
-
-          <p class="video-title">
-                    HTML & CSS Full Course - Beginner to Pro
-          </p>
-          <p class="video-author">
-                    SuperSimpleDev
-          </p>
-          <p class="video-stats">
-                    467万次观看 &#183; 1年前
-          </p>
+          <div class="video-preview">
+                    <div>     
+                              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    </div>
+                    <div>
+                              <div class="channel-picture">
+                                        <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+                              </div>
+                              <div class="video-info">
+                                        <p class="video-title">
+                                                  HTML & CSS Full Course - Beginner to Pro
+                                        </p>
+                                        <p class="video-author">
+                                                  SuperSimpleDev
+                                        </p>
+                                        <p class="video-stats">
+                                                  467万次观看 &#183; 1年前
+                                        </p>
+                              </div>
+                    </div>
+          </div>
+          <div class="video-preview">
+                    <div>
+                              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                    </div>
+                    <div>
+                              <div class="channel-picture">
+                                        <img class="profile-picture"  src="channel-pictures/channel-2.jpg">
+                              </div>
+                              <div class="video-info">
+                                        <p class="video-title">
+                                                  HKUST《Why Engineering?》科大工程《十四天》
+                                        </p>
+                                        <p class="video-author">
+                                                  HKUST Engineering
+                                        </p>
+                                        <p class="video-stats">
+                                                  6,404次观看 &#183; 3年前
+                                        </p>
+                              </div>
+                    </div>
+          </div>
 
 </body>
 
