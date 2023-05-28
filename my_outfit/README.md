@@ -32,4 +32,4 @@ Due to lack of the frontend knowledge, I would like to stop the development of t
 ## Credits
 The following lists the references I refer to during the learning of Flutter framework.
 - [Flutter docs](https://api.flutter.dev/index.html)
-- [Flutter 3.3 Master Class for Beginners to Advanced | Ticket Booking App Development Tutorial](https://www.youtube.com/watch?v=71AsYo2q_0Y)
+- [Flutter 3.3 Master Class for Beginners to Advanced - Ticket Booking App Development Tutorial](https://www.youtube.com/watch?v=71AsYo2q_0Y)
