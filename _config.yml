@@ -1,1 +1,5 @@
 theme: minima
+header_pages:
+- ./README.md
+- ./my_outfit/README.md
+- ./youtube_clone/README.md
