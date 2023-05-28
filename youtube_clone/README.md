@@ -1,6 +1,6 @@
 # Youtube Clone
 
-A learn-by-doing html/css project. The goak is to clone the youtube homepage as close as possible. Detail updated as project progresses. (Started on May 27, 2023)
+A learn-by-doing html/css project. The goal is to clone the youtube homepage as close as possible. Detail updated as project progresses. (Started on May 27, 2023)
 
 ## Getting Started
 Just click the `html` file and you are good to go.
