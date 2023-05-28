@@ -1,12 +1,13 @@
 # Youtube Clone
 
-A learn-by-doing html/css project. Detail updated as project progresses. (Started on May 27, 2023)
+A learn-by-doing html/css project. The goak is to clone the youtube homepage as close as possible. Detail updated as project progresses. (Started on May 27, 2023)
 
 ## Getting Started
 Just click the `html` file and you are good to go.
 
 ## Records as present
 Stage 1: Basic HTML and CSS (Completed on May 27, 2023)
+Stage 2: Text & Image Styling (Completed on May 28, 2023)
 
 ## Credits
 The following lists the references I refer to during the learning of HTML/CSS.
