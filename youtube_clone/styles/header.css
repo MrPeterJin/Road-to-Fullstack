@@ -98,10 +98,32 @@
     pointer-events: none;
     white-space: nowrap;
   }
+
+  .youtube-apps-icon-container .tooltip,
+  .notifications-icon-container .tooltip {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    left: -30px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
   
   .search-button:hover .tooltip,
   .voice-search-button:hover .tooltip,
-  .upload-icon-container:hover .tooltip {
+  .upload-icon-container:hover .tooltip,
+  .youtube-apps-icon-container:hover .tooltip, 
+  .notifications-icon-container:hover .tooltip {
     opacity: 1;
   }
   
@@ -137,9 +159,17 @@
   .youtube-apps-icon {
     height: 24px;
   }
+
+  .youtube-apps-icon-container {
+    position: relative;
+  }
   
   .notifications-icon {
     height: 24px;
+  }
+
+  .notifications-icon-container {
+    position: relative;
   }
   
   .notifications-icon-container {
