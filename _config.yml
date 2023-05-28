@@ -3,3 +3,15 @@ header_pages:
 - ./README.md
 - ./my_outfit/README.md
 - ./youtube_clone/README.md
+
+title: 
+author:
+  name: MrPeterJin
+  email: petergamsing@gmail.com
+  
+description: >
+  This is a GitHub Page to record MrPeterJin's learning progress to becoming a self-taught full-stack developer. I like implementing ideas :)
+  
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
