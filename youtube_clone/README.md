@@ -9,7 +9,7 @@ Implemented features:
 - [x] Media Queries
 - [x] Miscellaneous
 
-Project as completion: [YouTube Clone](./homepage.png)
+Project as completion: [YouTube Clone](./youtube.html)
 
 (Started on May 27, 2023, Completed on May 28, 2023)
 
