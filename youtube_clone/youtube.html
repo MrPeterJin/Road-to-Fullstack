@@ -10,25 +10,81 @@
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
     </head>
 
     <body>
         <div class="header">
             <div class="left-section">
-                <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="Menu Icon">
-                <img class="youtube-logo" src="icons/youtube-logo.svg" alt="YouTube Logo">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg"
+                    alt="Menu Icon">
+                <img class="youtube-logo" src="icons/youtube-logo.svg"
+                    alt="YouTube Logo">
             </div>
             <div class="middle-section">
                 <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg"
+                        alt="Search Icon">
+                        <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon"
+                        src="icons/voice-search-icon.svg" alt="Microphone Icon">
+                        <div class="tooltip">Search with your voice</div>
+                </button>
             </div>
             <div class="right-section">
-
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg" alt="Upload Icon">
+                    <div class="tooltip">Create</div>
+                </div>
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg"
+                    alt="YouTube Apps Icon">
+                <div class="notifications-icon-container"> <img class="notifications-icon" src="icons/notifications.svg"
+                    alt="Notifications Icon">
+                <div class="notifications-count">3</div>
+                </div>
+                <img class="current-user-picture"
+                    src="channel-pictures/my-channel.jpg"
+                    alt="My Profile Picture">
             </div>
         </div>
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img class="sidebar-home-icon" src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-explore-icon" src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-subscriptions-icon"
+                    src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-originals-icon" src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-youtube-music-icon"
+                    src="icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img class="sidebar-library-icon" src="icons/library.svg">
+                <div>Library</div>
+            </div>
+        </div>
+
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    <div class="video-time">6:31:24</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -51,6 +107,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                    <div class="video-time">12:21</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -73,6 +130,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                    <div class="video-time">11:09</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -85,7 +143,7 @@
                             Scientist
                         </p>
                         <p class="video-author">
-                            Joma Tech
+                            Joma Tech <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"></path></svg>
                         </p>
                         <p class="video-stats">
                             342万次观看 &#183; 4年前
@@ -96,6 +154,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                    <div class="video-time">12:57</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -107,7 +166,7 @@
                             TESTV雲南特種兵旅遊行動！2天打卡3地彌勒蒙自建水太美啦！【BB Time第400期】
                         </p>
                         <p class="video-author">
-                            TESTV
+                            TESTV <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"></path></svg>
                         </p>
                         <p class="video-stats">
                             5290次观看 &#183; 7小时前
@@ -118,6 +177,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                    <div class="video-time">25:22</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -140,6 +200,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                    <div class="video-time">4:58</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -151,10 +212,56 @@
                             How Asian Parents Grocery Shop
                         </p>
                         <p class="video-author">
-                            Steven He
+                            Steven He <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"></path></svg>
                         </p>
                         <p class="video-stats">
                             404万次观看 &#183; 6个月前
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+                    <div class="video-time">12:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture"
+                            src="channel-pictures/channel-7.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Uncle Roger Review MAANGCHI Kimchi Fried Rice
+                        </p>
+                        <p class="video-author">
+                            mrnigelng <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"></path></svg>
+                        </p>
+                        <p class="video-stats">
+                            4万次观看 &#183; 24分钟前
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+                    <div class="video-time">17:00</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture"
+                            src="channel-pictures/channel-8.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            3 PYTHON AUTOMATION PROJECTS FOR BEGINNERS
+                        </p>
+                        <p class="video-author">
+                            Internet Made Coder
+                        </p>
+                        <p class="video-stats">
+                            83万次观看 &#183; 10个月前
                         </p>
                     </div>
                 </div>
