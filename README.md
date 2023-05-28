@@ -9,9 +9,15 @@ I am taking the learn-by-doing approach to learn the knowledge of fullstack. For
 ## Records as present
 The overall roadmap I would take follows the [The Better Dev](https://www.thebetter.dev/) [curriculum](media/FullStackDeveloperRoadmap.pdf). 
 
-### Stage 1: HTML/CSS
-
-
+- [x] HTML/CSS
+- [ ] Internet
+- [ ] Javascript
+- [ ] Linux/Servers
+- [ ] Programming
+- [ ] Databases
+- [ ] APIs
+- [ ] Security/DevOps
+- [ ] Frontend Frameworks
 
 For the records of each project, please refer to the `README.md` file in each project folder.
 
