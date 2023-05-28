@@ -1,4 +1,4 @@
-# Youtube Clone
+# YouTube Clone
 
 A learn-by-doing html/css project. The goal is to clone the YouTube Homepage as close as possible.  
 
@@ -9,7 +9,7 @@ Implemented features:
 - [x] Media Queries
 - [x] Miscellaneous
 
-Project as completion: [Youtube Clone](./homepage.png)
+Project as completion: [YouTube Clone](./homepage.png)
 
 (Started on May 27, 2023, Completed on May 28, 2023)
 
