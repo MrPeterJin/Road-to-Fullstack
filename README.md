@@ -28,7 +28,7 @@ For the records of each project, please refer the brief introductions as follows
 
 - [30 Day Vanilla JS Coding Challenge](./js_challenges): Following [30 day vanilla js coding challenge](https://projectlearn.io/learn/web-development/project/javascript30---30-day-vanilla-js-coding-challenge-170), I started the journey of learning Javascript. (Started on Jul 17, 2023). 
   <details>
-    <summary>Projects</summary>
+    <summary><b>Projects</b></summary>
     <details>
     <summary>01 - JS Drum Kit</summary>
     A web application that plays drum sound when the corresponding key is pressed. (Started on Jul 17, 2023; Completed on Jul 17, 2023)
