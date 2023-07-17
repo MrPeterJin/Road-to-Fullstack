@@ -26,9 +26,8 @@ For the records of each project, please refer to the `README.md` file in each pr
 
 - **Computer Networks and the Internet**: This is a theorem learning process. I go through it through the book [Computer Networking: a Top-Down Approach (8th edition), J.F. Kurose, K.W. Ross, Pearson, 2020.](https://github.com/ece-cohort/Computer-Networking-A-Top-Down-Approach-7th-Edition). (Started on May 29, 2023; Completed on Jul 17, 2023). After this project, I think I have a basic understanding of the Internet and was amazed about how the Internet works.
 
-- [30 day vanilla js coding challenge](./js_challenges): Following [30 day vanilla js coding challenge](https://projectlearn.io/learn/web-development/project/javascript30---30-day-vanilla-js-coding-challenge-170), I started the journey of learning Javascript. (Started on Jul 17, 2023). 
+- [30 Day Vanilla JS Coding Challenge](./js_challenges): Following [30 day vanilla js coding challenge](https://projectlearn.io/learn/web-development/project/javascript30---30-day-vanilla-js-coding-challenge-170), I started the journey of learning Javascript. (Started on Jul 17, 2023). 
   <details>
     <summary>JS Drum Kit</summary>
-    <herf="./js_challenges/01%20-%20JavaScript%20Drum%20Kit/index.html">JS Drum Kit</herf>
-    : A web application that plays drum sound when the corresponding key is pressed. (Started on Jul 17, 2023; Completed on Jul 17, 2023)
+    A web application that plays drum sound when the corresponding key is pressed. (Started on Jul 17, 2023; Completed on Jul 17, 2023)
   </details>
