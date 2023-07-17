@@ -8,7 +8,7 @@ I am taking the learn-by-doing approach to learn the knowledge of fullstack. For
 The overall roadmap I would take follows the [The Better Dev](https://www.thebetter.dev/) [curriculum](media/FullStackDeveloperRoadmap.pdf). 
 
 - [x] HTML/CSS
-- [ ] Internet
+- [x] Internet
 - [ ] Javascript
 - [ ] Linux/Servers
 - [ ] Programming
@@ -24,4 +24,4 @@ For the records of each project, please refer to the `README.md` file in each pr
 
 - [YouTube Clone](./youtube_clone/): A learn-by-doing html/css project. Following [HTML & CSS Full Course - Beginner to Pro](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&ab_channel=SuperSimpleDev), this project has fully investigated the basic knowledge of HTML/CSS and clones the homepage of YouTube. (Started on May 27, 2023; Completed on May 28, 2023). After this project, I think I have a (sort of) basic understanding of HTML/CSS and will move on to the next project.
 
-- **Computer Networks and the Internet**: This is a theorem learning process. I go through it through the book [Computer Networking: a Top-Down Approach (8th edition), J.F. Kurose, K.W. Ross, Pearson, 2020.](https://github.com/ece-cohort/Computer-Networking-A-Top-Down-Approach-7th-Edition). (Started on May 29, 2023)
+- **Computer Networks and the Internet**: This is a theorem learning process. I go through it through the book [Computer Networking: a Top-Down Approach (8th edition), J.F. Kurose, K.W. Ross, Pearson, 2020.](https://github.com/ece-cohort/Computer-Networking-A-Top-Down-Approach-7th-Edition). (Started on May 29, 2023; Completed on Jul 17, 2023). After this project, I think I have a basic understanding of the Internet and was amazed about how the Internet works.
