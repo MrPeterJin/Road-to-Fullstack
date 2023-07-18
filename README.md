@@ -37,4 +37,8 @@ For the records of each project, please refer the brief introductions as follows
     <summary>02 - JS and CSS Clock</summary>
     A web application that shows the current time with a clock. (Completed on Jul 18, 2023)
     </details>
+     <details>
+    <summary>03 - CSS Variables</summary>
+    A web application that uses CSS variables to change the spacing, blur, and color of an image. (Completed on Jul 18, 2023)
+    </details>
   </details>
