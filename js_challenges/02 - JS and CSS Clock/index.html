@@ -60,6 +60,7 @@
     .hand {
       width: 50%;
       height: 6px;
+      border-radius: 20%;
       background: black;
       position: absolute;
       top: 50%;
@@ -67,6 +68,30 @@
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+    .hand.second-hand {
+      width: 50%;
+      height: 2px;
+      border: #b1b1b1;
+      border-style: solid;
+      border-width: 2px;
+    }
+
+    .hand.min-hand {
+      width: 50%;
+      height: 4px;
+      border: #b1b1b1;
+      border-style: solid;
+      border-width: 2px;
+    }
+
+    .hand.hour-hand {
+      width: 50%;
+      height: 6px;
+      border: #b1b1b1;
+      border-style: solid;
+      border-width: 2px;
     }
 
   </style>
