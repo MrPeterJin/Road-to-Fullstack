@@ -31,6 +31,10 @@ For the records of each project, please refer the brief introductions as follows
     <summary><b>Projects</b></summary>
     <details>
     <summary>01 - JS Drum Kit</summary>
-    A web application that plays drum sound when the corresponding key is pressed. (Started on Jul 17, 2023; Completed on Jul 17, 2023)
+    A web application that plays drum sound when the corresponding key is pressed. (Completed on Jul 17, 2023)
+    </details>
+    <details>
+    <summary>02 - JS and CSS Clock</summary>
+    A web application that shows the current time with a clock. (Completed on Jul 18, 2023)
     </details>
   </details>
