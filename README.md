@@ -9,7 +9,7 @@ The overall roadmap I would take follows the [The Better Dev](https://www.thebet
 
 - [x] HTML/CSS
 - [x] Internet
-- [ ] Javascript
+- [-] Javascript
 - [ ] Linux/Servers
 - [ ] Programming
 - [ ] Databases
@@ -47,6 +47,6 @@ For the records of each project, please refer the brief introductions as follows
     </details>
     <details>
     <summary>05 - Flex Panel Gallery</summary>
-    A web application that shows a gallery of images that expand when clicked. (Completed on Jul 20, 2023)
+    A web application that shows a gallery of images that expand when clicked. (Completed on Jul 19, 2023)
     </details>
   </details>

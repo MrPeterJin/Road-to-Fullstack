@@ -5,3 +5,4 @@ This folder is a record of my progress in the [30 day vanilla js coding challeng
 - [JS and CSS Clock](./02%20-%20JS%20and%20CSS%20Clock): A web application that shows the current time with a clock. (Completed on Jul 18, 2023)
 - [CSS Variables](./03%20-%20CSS%20Variables): A web application that uses CSS variables to change the spacing, blur, and color of an image. (Completed on Jul 18, 2023)
 - [Array Cardio Day 1](./04%20-%20Array%20Cardio%20Day%201): A script that uses array methods to manipulate data. (Completed on Jul 19, 2023)
+- [Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery): A web application that shows a gallery of images that expand when clicked. (Completed on Jul 19, 2023)
