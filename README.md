@@ -41,4 +41,12 @@ For the records of each project, please refer the brief introductions as follows
     <summary>03 - CSS Variables</summary>
     A web application that uses CSS variables to change the spacing, blur, and color of an image. (Completed on Jul 18, 2023)
     </details>
+    <details>
+    <summary>04 - Array Cardio Day 1</summary>
+    A script that uses array methods to manipulate data. (Completed on Jul 19, 2023)
+    </details>
+    <details>
+    <summary>05 - Flex Panel Gallery</summary>
+    A web application that shows a gallery of images that expand when clicked. (Completed on Jul 20, 2023)
+    </details>
   </details>
