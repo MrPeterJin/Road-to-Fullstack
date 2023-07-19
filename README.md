@@ -9,7 +9,7 @@ The overall roadmap I would take follows the [The Better Dev](https://www.thebet
 
 - [x] HTML/CSS
 - [x] Internet
-- [-] Javascript
+- [ ] Javascript *Now in Progress*
 - [ ] Linux/Servers
 - [ ] Programming
 - [ ] Databases
