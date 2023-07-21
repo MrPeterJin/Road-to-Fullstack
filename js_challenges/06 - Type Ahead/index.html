@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <title>Type Ahead 👀</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://fav.farm/✅" />
+  <link rel="icon" href="https://fav.farm/✴️" />
 </head>
 <body>
-
+  <!-- Title and description -->
+  <h1 style="text-align: center; font-family:Arial, Helvetica, sans-serif">👀 Type Ahead</h1>
+  <p style="text-align: center; font-family:Arial, Helvetica, sans-serif">Type a US city or state to see how the list is filtered.</p>
+  <!-- Search form -->
   <form class="search-form">
     <input type="text" class="search" placeholder="City or State">
     <ul class="suggestions">
@@ -31,20 +34,13 @@ function findMatches(wordToMatch, cities) {
   });
 }
 
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
   const html = matchArray.map(place => {
-    const regex = new RegExp(this.value, 'gi');
-    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
-    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
     return `
       <li>
-        <span class="name">${cityName}, ${stateName}</span>
-        <span class="population">${numberWithCommas(place.population)}</span>
+        <span class="name">${place.city}, ${place.state}</span>
+        <span class="population">${place.population}</span>
       </li>
     `;
   }).join('');
@@ -57,6 +53,8 @@ const suggestions = document.querySelector('.suggestions');
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
 
+ 
+
 </script>
-  </body>
+</body>
 </html>
