@@ -6,3 +6,4 @@ This folder is a record of my progress in the [30 day vanilla js coding challeng
 - [CSS Variables](./03%20-%20CSS%20Variables): A web application that uses CSS variables to change the spacing, blur, and color of an image. (Completed on Jul 18, 2023)
 - [Array Cardio Day 1](./04%20-%20Array%20Cardio%20Day%201): A script that uses array methods to manipulate data. (Completed on Jul 19, 2023)
 - [Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery): A web application that shows a gallery of images that expand when clicked. (Completed on Jul 19, 2023)
+- [Type Ahead](./06%20-%20Type%20Ahead): A web application that uses the fetch API to retrieve data from a server and display it in a list. The data is a list of cities and states in the US. The user can type in a city or state and the list will be filtered to show only the cities or states that match the user's input. (Completed on Jul 21, 2023)
