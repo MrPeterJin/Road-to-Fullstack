@@ -53,4 +53,8 @@ For the records of each project, please refer the brief introductions as follows
     <summary>06 - Type Ahead</summary>
     A web application that uses the fetch API to retrieve data from a server and display it in a list. The data is a list of cities and states in the US. The user can type in a city or state and the list will be filtered to show only the cities or states that match the user's input. (Completed on Jul 21, 2023)
     </details>
+    <details>
+    <summary>07 - Array Cardio Day 2</summary>
+    A web application that uses array methods to manipulate data. (Completed on Jul 22, 2023)
+    </details>
   </details>
