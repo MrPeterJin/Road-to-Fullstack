@@ -1,0 +1,2 @@
+# HTML5 Canvas
+This is a simple HTML5 Canvas drawing app. It allows you to draw on the canvas with a color of your choice and a line width of your choice. The color and line width can be changed by clicking on the color and line width buttons. The color button will open a color picker and the line width button will open a prompt to enter a line width. The line width can be any number between 1 and 100.
