@@ -8,6 +8,52 @@
         height: 50vh;
       }
     }
+    html, body {
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 100;
+      font-size: 300%;
+      background: #ffc600;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif
+    }
+    p {
+      margin: 0;
+      padding-bottom: 0.5%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 200%;
+      font-style: italic;
+      text-align: center;
+    }
+    canvas {
+      border-style: solid;
+      border-color: #000000;
+    }
+    botton {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 300%;
+      font-style: italic;
+      text-align: center;
+      background: #ffc600;
+      border: none;
+      color: #000000;
+      padding: 0.5% 1%;
+      text-decoration: none;
+      margin: 0.5%;
+      cursor: pointer;
+    }
+
+    .container {
+      background: #ffc600;
+      text-align: center;
+    }
+  
+    .container > * {
+      display: inline-block;
+      margin: 0 0.1%; 
+    }
   </style>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>
@@ -15,7 +61,10 @@
 </head>
 <body>
   <h1>🎨 HTML5 Canvas</h1>
-  <p>Click and drag to draw</p>
+  <div class="container">
+            <p>Click and drag to draw</p>
+            <button>Clear</button>
+  </div>
 
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
@@ -93,7 +142,6 @@
   if (isMobile) {
     canvas.addEventListener('touchstart', (e) => {
       isDrawing = true;
-      console.log(e);
       [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
     });
     canvas.addEventListener('touchmove', (e) => {
@@ -113,29 +161,5 @@
   }
 
 </script>
-
-<style>
-  html, body {
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-    font-weight: 100;
-    font-size: 300%;
-    background: #ffc600;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif
-  }
-  p {
-    margin: 0;
-    padding-bottom: 0.5%;
-    background: #ffc600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-    font-style: italic;
-    text-align: center;
-  }
-</style>
-
 </body>
 </html>
