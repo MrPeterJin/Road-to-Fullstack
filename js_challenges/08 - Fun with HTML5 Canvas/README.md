@@ -1,2 +1,15 @@
 # HTML5 Canvas
 This is a simple HTML5 Canvas drawing app. It allows you to draw on the canvas with a color of your choice and a line width of your choice. The color and line width can be changed by clicking on the color and line width buttons. The color button will open a color picker and the line width button will open a prompt to enter a line width. The line width can be any number between 1 and 100.
+
+Key Takeaways:
+- `canvas` element: The `canvas` element is used to draw graphics on a web page. It has a width and height attribute that can be used to set the size of the canvas. The canvas element can be styled with CSS.
+- `getContext()` method: The `getContext()` method is used to get the rendering context of the canvas. The rendering context is used to draw on the canvas. The `getContext()` method takes one argument, which is the type of context to get. The type of context to get is specified by a string. The string can be `2d` or `webgl`. The `2d` context is used to draw 2D graphics on the canvas. The `webgl` context is used to draw 3D graphics on the canvas.
+- `strokeStyle` property: The `strokeStyle` property is used to set the color of the stroke. The stroke is the outline of a shape. The `strokeStyle` property can be set to a color name, a hex color code, or an RGB color value.
+- `lineWidth` property: The `lineWidth` property is used to set the width of the stroke. The `lineWidth` property can be set to any number between 1 and 100.
+- `lineCap` property: The `lineCap` property is used to set the shape of the stroke. The `lineCap` property can be set to `butt`, `round`, or `square`.
+- `lineJoin` property: The `lineJoin` property is used to set the shape of the corners of the stroke. The `lineJoin` property can be set to `round`, `bevel`, or `miter`.
+- `beginPath()` method: The `beginPath()` method is used to start a new path. A path is a series of points connected by lines. The `beginPath()` method is used to start a new path after the previous path has been drawn.
+- `moveTo()` method: The `moveTo()` method is used to move the starting point of a path to a new point. The `moveTo()` method takes two arguments, which are the x and y coordinates of the new starting point.
+- `lineTo()` method: The `lineTo()` method is used to draw a line from the current point to a new point. The `lineTo()` method takes two arguments, which are the x and y coordinates of the new point.
+- `stroke()` method: The `stroke()` method is used to draw the path that has been created with the `beginPath()`, `moveTo()`, and `lineTo()` methods. The `stroke()` method takes no arguments.
+- `userAgent` property: The `userAgent` property is used to get the user agent string of the browser. The user agent string is a string that contains information about the browser, such as the name and version.
