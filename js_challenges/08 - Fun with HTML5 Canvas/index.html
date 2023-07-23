@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @media screen and (max-width: 800px) {
+      canvas {
+        width: 100%;
+        height: 50vh;
+      }
+    }
+  </style>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>
   <link rel="icon" href="https://fav.farm/🎨" />
@@ -11,10 +19,17 @@
 
 <canvas id="draw" width="800" height="800"></canvas>
 <script>
+  // Initial setup
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isMobile = /mobile|android|iphone|ipad|ipod|blackberry|opera mini|iemobile/i.test(userAgent);
   const canvas = document.querySelector('#draw');
   const ctx = canvas.getContext('2d');
+  const title = document.querySelector('h1');
+  const descript = document.querySelector('p');
+  const banner_height = title.offsetHeight + descript.offsetHeight;
+  
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = window.innerHeight - banner_height;
   ctx.strokeStyle = '#BADA55';
   ctx.lineJoin = 'round';
   ctx.lineCap = 'round';
@@ -25,8 +40,9 @@
   let lastY = 0;
   let hue = 0;
   let direction = true;
-  
-  function draw(e) {
+
+  // Desktop events
+  function pc_draw(e) {
     if (!isDrawing) return; // stop the fn from running when they are not moused down
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     hue++;
@@ -50,29 +66,51 @@
     [lastX, lastY] = [e.offsetX, e.offsetY];
   }
 
-  // Desktop events
-  canvas.addEventListener('mousedown', (e) => {
-    isDrawing = true;
-    [lastX, lastY] = [e.offsetX, e.offsetY];
-  });
-  canvas.addEventListener('mouseup', () => isDrawing = false);
-  canvas.addEventListener('mouseout', () => isDrawing = false);
+  function mobile_draw(e) {
+    if (!isDrawing) return; // stop the fn from running when they are not touched down
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    hue++;
+    if (hue >= 360) {
+      hue = 0;
+    }
+    if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) { 
+      direction = !direction;
+    }
+    if(direction) {
+      ctx.lineWidth++;
+    } else {
+      ctx.lineWidth--;
+    }
+    ctx.beginPath();
+    // start from
+    ctx.moveTo(lastX, lastY);
+    // go to
+    ctx.lineTo(e.clientX, e.clientY);
+    ctx.stroke();
+    [lastX, lastY] = [e.clientX, e.clientY];
+  }
 
-  canvas.addEventListener('mousemove', draw);
-
-  // Mobile events
-  canvas.addEventListener('touchstart', (e) => {
-    isDrawing = true;
-    [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
-  });
-
-  canvas.addEventListener('touchmove', (e) => {
-    draw(e.touches[0]);
-  });
-
-  canvas.addEventListener('touchend', () => isDrawing = false);
-
-  
+  if (isMobile) {
+    canvas.addEventListener('touchstart', (e) => {
+      isDrawing = true;
+      console.log(e);
+      [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
+    });
+    canvas.addEventListener('touchmove', (e) => {
+      mobile_draw(e.touches[0]);
+    });
+    canvas.addEventListener('touchend', () => {
+      isDrawing = false
+    });
+  } else {
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    });
+    canvas.addEventListener('mousemove', pc_draw);
+    canvas.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mouseout', () => isDrawing = false);
+  }
 
 </script>
 
