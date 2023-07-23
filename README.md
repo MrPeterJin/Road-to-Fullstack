@@ -57,4 +57,8 @@ For the records of each project, please refer the brief introductions as follows
     <summary>07 - Array Cardio Day 2</summary>
     A web application that uses array methods to manipulate data. (Completed on Jul 22, 2023)
     </details>
+    <details>
+    <summary>08 - Fun with HTML5 Canvas</summary>
+    A web application that allows the user to draw on a canvas. (Completed on Jul 23, 2023)
+    </details>
   </details>
