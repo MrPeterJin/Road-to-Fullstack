@@ -65,4 +65,8 @@ For the records of each project, please refer the brief introductions as follows
     <summary>09 - Dev Tools Domination</summary>
     A script that demonstrates some of the features of the browser's developer tools. (Completed on Jul 23, 2023)
     </details>
+    <details>
+    <summary>10 - Hold Shift and Check Checkboxes</summary>
+    A script that allows the user to check multiple checkboxes by holding down the shift key and clicking on the first and last checkboxes. (Completed on Jul 26, 2023)
+    </details>
   </details>
